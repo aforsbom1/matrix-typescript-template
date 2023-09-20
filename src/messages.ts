@@ -6,7 +6,7 @@ type Message = {
   message: string;
 };
 
-// This message is called when a message is received
+// This function is called when a message is received
 export const messageReceived = (message: Message) => {
   if (message.message === "!ping") {
     sendMessage(message.room, "Pong!");
